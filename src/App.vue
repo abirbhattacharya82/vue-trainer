@@ -1,13 +1,16 @@
 <template>
-  <Navbar/>
+  <MyNavbar/>
+  <MyHero/>
 </template>
 
 <script>
-import Navbar from './components/Navbar/Navbar.vue'
+import MyNavbar from './components/MyNavbar/MyNavbar.vue';
+import MyHero from './components/MyHero/MyHero.vue';
 export default {
   name: 'App',
   components: {
-    Navbar
+    MyNavbar,
+    MyHero
   }
 }
 </script>

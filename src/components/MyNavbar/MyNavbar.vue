@@ -3,4 +3,4 @@
         Mc Donald's
     </nav>
 </template>
-<style src="./Navbar.css"></style>
+<style src="./MyNavbar.css"></style>
