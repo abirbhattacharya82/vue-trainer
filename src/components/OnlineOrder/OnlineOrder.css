@@ -40,7 +40,11 @@
 }
 .Row .Card .Title
 {
-    font-size: 120%;
+    font-size: 100%;
+}
+.Row .Card .Price
+{
+    font-size: 70%;
 }
 .Row .Card .Button
 {

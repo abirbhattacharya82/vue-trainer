@@ -10,8 +10,11 @@
                         <div class="Title">
                             Coke
                         </div>
+                        <div class="Price">
+                            44 Rs
+                        </div>
                         <div class="Button">
-                            <button>-</button><div class="count">0</div><button>+</button>
+                            <button @click="reduceCoke()">-</button><div class="count" id="cokeCount">0</div><button @click="increaseCoke()">+</button>
                         </div>
                     </div>
                     <div class="Card">
@@ -21,8 +24,11 @@
                         <div class="Title">
                             Double Cheese Burger
                         </div>
+                        <div class="Price">
+                            292 Rs
+                        </div>
                         <div class="Button">
-                            <button>-</button><div class="count">0</div><button>+</button>
+                            <button @click="reduceDCB()">-</button><div class="count" id="dcbCount">0</div><button @click="increaseDCB()">+</button>
                         </div>
                     </div>
                     <div class="Card">
@@ -32,8 +38,11 @@
                         <div class="Title">
                             Fries
                         </div>
+                        <div class="Price">
+                            62 Rs
+                        </div>
                         <div class="Button">
-                            <button>-</button><div class="count">0</div><button>+</button>
+                            <button @click="reduceFries()">-</button><div class="count" id="friesCount">0</div><button @click="increaseFries()">+</button>
                         </div>
                     </div>
                 </div>
@@ -45,8 +54,11 @@
                         <div class="Title">
                             Ice Tea
                         </div>
+                        <div class="Price">
+                            175 Rs
+                        </div>
                         <div class="Button">
-                            <button>-</button><div class="count">0</div><button>+</button>
+                            <button @click="reduceIt()">-</button><div class="count" id="itCount">0</div><button @click="increaseIt()">+</button>
                         </div>
                     </div>
                     <div class="Card">
@@ -56,8 +68,11 @@
                         <div class="Title">
                             Mc Chicken
                         </div>
+                        <div class="Price">
+                            329 Rs
+                        </div>
                         <div class="Button">
-                            <button>-</button><div class="count">0</div><button>+</button>
+                            <button @click="reduceMc()">-</button><div class="count" id="mcCount">0</div><button @click="increaseMc()">+</button>
                         </div>
                     </div>
                     <div class="Card">
@@ -67,8 +82,11 @@
                         <div class="Title">
                             Mc Nuggets
                         </div>
+                        <div class="Price">
+                            161 Rs
+                        </div>
                         <div class="Button">
-                            <button>-</button><div class="count">0</div><button>+</button>
+                            <button @click="reduceMn()">-</button><div class="count" id="mnCount">0</div><button @click="increaseMn()">+</button>
                         </div>
                     </div>
                 </div>
@@ -80,8 +98,11 @@
                         <div class="Title">
                             Salad
                         </div>
+                        <div class="Price">
+                            242 Rs
+                        </div>
                         <div class="Button">
-                            <button>-</button><div class="count">0</div><button>+</button>
+                            <button @click="reduceSalad()">-</button><div class="count" id="saladCount">0</div><button @click="increaseSalad()">+</button>
                         </div>
                     </div>
                     <div class="Card">
@@ -91,19 +112,11 @@
                         <div class="Title">
                             Water
                         </div>
-                        <div class="Button">
-                            <button>-</button><div class="count">0</div><button>+</button>
-                        </div>
-                    </div>
-                    <div class="Card">
-                        <div class="Image">
-                            <img src="./assets/Coke.png" alt="">
-                        </div>
-                        <div class="Title">
-                            Coke
+                        <div class="Price">
+                            85 Rs
                         </div>
                         <div class="Button">
-                            <button>-</button><div class="count">0</div><button>+</button>
+                            <button @click="reduceWater()">-</button><div class="count" id="waterCount">0</div><button @click="increaseWater()">+</button>
                         </div>
                     </div>
                 </div>
@@ -119,15 +132,15 @@
                         <div class="Item">
                             Total
                         </div>
-                        <div class="Amount">
+                        <div class="Amount" id="total">
                             0
                         </div>
                     </div>
                     <div class="BillRow">
                         <div class="Item">
-                            Discount
+                            Discount @ 5%
                         </div>
-                        <div class="Amount">
+                        <div class="Amount" id="discount">
                             0
                         </div>
                     </div>
@@ -135,7 +148,7 @@
                         <div class="Item">
                             Payable Amount
                         </div>
-                        <div class="Amount">
+                        <div class="Amount" id="payable">
                             0
                         </div>
                     </div>
@@ -147,4 +160,5 @@
         </div>
     </div>
 </template>
+<script src="./OnlineOrder.js"></script>
 <style src="./OnlineOrder.css"></style>
