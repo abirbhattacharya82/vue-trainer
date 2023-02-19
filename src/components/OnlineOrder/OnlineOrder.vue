@@ -152,9 +152,6 @@
                             0
                         </div>
                     </div>
-                    <div class="BillRow">
-                        <button>Pay</button>
-                    </div>
                 </div>
             </div>
         </div>

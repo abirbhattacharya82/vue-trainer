@@ -1,8 +1,10 @@
 nav
 {
+    position: fixed;
     font-size: 150%;
     background-color: red;
     color: yellow;
     padding: 1%;
     font-weight: bold;
+    width: 100%;
 }
