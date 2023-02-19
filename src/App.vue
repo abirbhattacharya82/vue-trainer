@@ -28,6 +28,10 @@ export default {
       this.payableValue=document.getElementById('payable').innerHTML
       this.showO=!this.showO
       this.showPO=!this.showPO
+      if(document.getElementById('pay').innerHTML=='Pay')
+      {
+        document.getElementById('pay').style.display="none";
+      }
     }
   }
 }
