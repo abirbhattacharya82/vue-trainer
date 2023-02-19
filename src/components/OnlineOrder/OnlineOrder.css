@@ -1,4 +1,98 @@
 .OnlineOrder
 {
-    
+    display: flex;
+    justify-content: center;
+}
+.Left
+{
+    width: 70%;
+}
+.Right
+{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Row
+{
+    display: flex;
+    justify-content: center;
+}
+.Row .Card
+{
+    width: 200px;
+    height: 180px;
+    margin: 1%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Row .Card .Image
+{
+    width: 180px;
+    margin-left: 10px;
+    height: 130px;
+}
+.Row .Card .Image img
+{
+    width: 100%;
+    height: 100%;
+}
+.Row .Card .Title
+{
+    font-size: 120%;
+}
+.Row .Card .Button
+{
+    display: flex;
+    justify-content: center;
+}
+.Row .Card .Button button
+{
+    width: 10%;
+    margin-left: 1%;
+    margin-right: 1%;
+    color: yellow;
+    background-color: red;
+    border: 1px solid yellow;
+}
+.Row .Card .Button button:hover
+{
+    background-color: yellow;
+    color: red;
+    border: 1px solid red;
+}
+.Bill
+{
+    padding: 2%;
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Bill .Title
+{
+    font-size: 150%;
+}
+.Bill .CalculatePart .BillRow
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+.Bill .CalculatePart .BillRow .Item
+{
+    width: 50%;
+    text-align: left;
+}
+.Bill .CalculatePart .BillRow .Amount
+{
+    width: 50%;
+    text-align: right;
+}
+.Bill .CalculatePart .BillRow button
+{
+    width: 30%;
+    font-size: 120%;
+    background-color: rgb(0, 89, 255);
+    color: white;
+    border: none;
 }
